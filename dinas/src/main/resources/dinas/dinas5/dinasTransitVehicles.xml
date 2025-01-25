@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd">
+
+    <vehicleType id="defaultTransitVehicleType">
+        <capacity seats="101" standingRoomInPersons="0">
+        </capacity>
+        <length meter="7.5"/>
+        <width meter="1.0"/>
+        <costInformation>
+        </costInformation>
+        <passengerCarEquivalents pce="0.0"/>
+        <networkMode networkMode="car"/>
+        <flowEfficiencyFactor factor="1.0"/>
+    </vehicleType>
+
+    <vehicle id="bus101" type="defaultTransitVehicleType"/>
+    <vehicle id="bus102" type="defaultTransitVehicleType"/>
+    <vehicle id="bus103" type="defaultTransitVehicleType"/>
+    <vehicle id="bus104" type="defaultTransitVehicleType"/>
+    <vehicle id="bus105" type="defaultTransitVehicleType"/>
+    <vehicle id="bus106" type="defaultTransitVehicleType"/>
+    <vehicle id="bus107" type="defaultTransitVehicleType"/>
+    <vehicle id="bus108" type="defaultTransitVehicleType"/>
+    <vehicle id="bus109" type="defaultTransitVehicleType"/>
+    <vehicle id="bus110" type="defaultTransitVehicleType"/>
+    <vehicle id="bus111" type="defaultTransitVehicleType"/>
+    <vehicle id="bus112" type="defaultTransitVehicleType"/>
+    <vehicle id="bus113" type="defaultTransitVehicleType"/>
+    <vehicle id="bus114" type="defaultTransitVehicleType"/>
+    <vehicle id="bus115" type="defaultTransitVehicleType"/>
+    <vehicle id="bus116" type="defaultTransitVehicleType"/>
+    <vehicle id="bus117" type="defaultTransitVehicleType"/>
+    <vehicle id="bus118" type="defaultTransitVehicleType"/>
+    <vehicle id="bus119" type="defaultTransitVehicleType"/>
+    <vehicle id="bus120" type="defaultTransitVehicleType"/>
+    <vehicle id="bus121" type="defaultTransitVehicleType"/>
+    <vehicle id="bus122" type="defaultTransitVehicleType"/>
+
+
+</vehicleDefinitions>

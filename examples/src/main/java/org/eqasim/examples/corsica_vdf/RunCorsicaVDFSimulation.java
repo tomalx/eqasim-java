@@ -4,8 +4,8 @@ import java.net.URL;
 
 import org.eqasim.core.simulation.analysis.EqasimAnalysisModule;
 import org.eqasim.core.simulation.mode_choice.EqasimModeChoiceModule;
-import org.eqasim.ile_de_france.IDFConfigurator;
-import org.eqasim.ile_de_france.mode_choice.IDFModeChoiceModule;
+import org.eqasim.dinas.IDFConfigurator;
+import org.eqasim.dinas.mode_choice.IDFModeChoiceModule;
 import org.eqasim.vdf.VDFConfigGroup;
 import org.eqasim.vdf.VDFModule;
 import org.matsim.api.core.v01.Scenario;
@@ -28,7 +28,7 @@ public class RunCorsicaVDFSimulation {
 				.allowPrefixes("mode-parameter", "cost-parameter") //
 				.build();
 
-		URL configUrl = Resources.getResource("corsica/corsica_config.xml");
+		URL configUrl = Resources.getResource("dinas/corsica_config.xml");
 		Config config = ConfigUtils.loadConfig(configUrl, IDFConfigurator.getConfigGroups());
 
 		config.controler().setLastIteration(2);

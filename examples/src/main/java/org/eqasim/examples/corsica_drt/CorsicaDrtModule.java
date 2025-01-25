@@ -15,8 +15,8 @@ import org.eqasim.examples.corsica_drt.mode_choice.parameters.CorsicaDrtCostPara
 import org.eqasim.examples.corsica_drt.mode_choice.parameters.CorsicaDrtModeParameters;
 import org.eqasim.examples.corsica_drt.mode_choice.utilities.DrtPredictor;
 import org.eqasim.examples.corsica_drt.mode_choice.utilities.DrtUtilityEstimator;
-import org.eqasim.ile_de_france.mode_choice.parameters.IDFCostParameters;
-import org.eqasim.ile_de_france.mode_choice.parameters.IDFModeParameters;
+import org.eqasim.dinas.mode_choice.parameters.IDFCostParameters;
+import org.eqasim.dinas.mode_choice.parameters.IDFModeParameters;
 import org.matsim.core.config.CommandLine;
 
 import com.google.inject.Provider;

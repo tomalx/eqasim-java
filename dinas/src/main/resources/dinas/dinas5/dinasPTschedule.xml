@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transitSchedule SYSTEM "http://www.matsim.org/files/dtd/transitSchedule_v2.dtd">
+
+<transitSchedule>
+    <transitStops>
+        <stopFacility id="stop_W1" x="50" y="5000" linkRefId="S1" name="WestvilleOne" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_W2" x="50" y="5000" linkRefId="S2" name="WestvilleTwo" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_LW" x="4000" y="5000" linkRefId="L1" name="DinasWest" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">no</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">yes</attribute>-->
+
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_LN" x="5000" y="6000" linkRefId="L2" name="DinasNorth" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">no</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">yes</attribute>-->
+
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_LE" x="6000" y="5000" linkRefId="L3" name="DinasEast" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">no</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">yes</attribute>-->
+
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_LS" x="5000" y="4000" linkRefId="L4" name="DinasSouth" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">no</attribute>
+                <attribute name="isParkRide" class="java.lang.String">no</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">yes</attribute>-->
+
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_E1" x="9950" y="5000" linkRefId="S5" name="EastvilleOne" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <attribute name="isParkRide" class="java.lang.Boolean">yes</attribute>
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_E2" x="9950" y="5000" linkRefId="S6" name="EastvilleTwo" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <attribute name="isParkRide" class="java.lang.Boolean">yes</attribute>
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_S1" x="5000" y="0" linkRefId="S7s" name="SouthvilleOne" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">parkRide</attribute>-->
+                <attribute name="isParkRide" class="java.lang.String">yes</attribute>
+<!--                <attribute name="accessLinkId_car" class="java.lang.String">S7s</attribute>-->
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_S2" x="5000" y="0" linkRefId="S8s" name="SouthvilleTwo" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+<!--                <attribute name="carAccess" class="java.lang.String">parkRide</attribute>-->
+                <attribute name="isParkRide" class="java.lang.String">yes</attribute>
+<!--                <attribute name="accessLinkId_car" class="java.lang.String">S8s</attribute>-->
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_S3" x="5000" y="50" linkRefId="S7" name="SouthvilleThree" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <!--                <attribute name="carAccess" class="java.lang.String">parkRide</attribute>-->
+                <attribute name="isParkRide" class="java.lang.String">yes</attribute>
+                                <attribute name="accessLinkId_car" class="java.lang.String">S7s</attribute>
+            </attributes>
+        </stopFacility>
+        <stopFacility id="stop_S4" x="5000" y="50" linkRefId="S8" name="SouthvilleFour" isBlocking="false">
+            <attributes>
+                <attribute name="bikeAccess" class="java.lang.String">yes</attribute>
+                <!--                <attribute name="carAccess" class="java.lang.String">parkRide</attribute>-->
+                <attribute name="isParkRide" class="java.lang.String">yes</attribute>
+                                <attribute name="accessLinkId_car" class="java.lang.String">S8s</attribute>
+            </attributes>
+        </stopFacility>
+
+
+    </transitStops>
+
+
+<!--   <transitLine id="eastWest">-->
+<!--        <attributes>-->
+<!--            <attribute name="gtfs_agency_id" class="java.lang.String">dinasBusCo</attribute>-->
+<!--            <attribute name="gtfs_route_short_name" class="java.lang.String">eastWest</attribute>-->
+<!--            <attribute name="gtfs_route_type" class="java.lang.String">3</attribute>-->
+<!--        </attributes>-->
+
+<!--        <transitRoute id="goEast1">-->
+<!--            <transportMode>bus</transportMode>-->
+
+<!--            <routeProfile>-->
+<!--                <stop refId="stop_W1" arrivalOffset="00:00:00" departureOffset="00:00:00" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_LW" arrivalOffset="00:04:00" departureOffset="00:04:30" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_LN" arrivalOffset="00:06:30" departureOffset="00:07:00" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_E2" arrivalOffset="00:11:00" departureOffset="00:11:00" awaitDeparture="true"/>-->
+
+<!--            </routeProfile>-->
+
+<!--            <route>-->
+<!--                <link refId="S1"/>-->
+<!--                <link refId="L1"/>-->
+<!--                <link refId="L2"/>-->
+<!--                <link refId="S6"/>-->
+<!--            </route>-->
+
+<!--            <departures>-->
+<!--                <departure id="E01" departureTime="07:00:00" vehicleRefId="bus101"/>-->
+<!--                <departure id="E02" departureTime="07:10:00" vehicleRefId="bus102"/>-->
+<!--                <departure id="E03" departureTime="07:20:00" vehicleRefId="bus103"/>-->
+<!--                <departure id="E04" departureTime="07:30:00" vehicleRefId="bus104"/>-->
+<!--                <departure id="E05" departureTime="07:40:00" vehicleRefId="bus105"/>-->
+<!--                <departure id="E06" departureTime="07:50:00" vehicleRefId="bus106"/>-->
+<!--            </departures>-->
+<!--        </transitRoute>-->
+
+
+<!--        <transitRoute id="goWest1">-->
+<!--            <transportMode>bus</transportMode>-->
+
+<!--            <routeProfile>-->
+<!--                <stop refId="stop_E1" arrivalOffset="00:00:00" departureOffset="00:00:00" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_LE" arrivalOffset="00:04:00" departureOffset="00:04:30" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_LS" arrivalOffset="00:06:30" departureOffset="00:07:00" awaitDeparture="true"/>-->
+<!--                <stop refId="stop_W2" arrivalOffset="00:11:00" departureOffset="00:11:00" awaitDeparture="true"/>-->
+<!--            </routeProfile>-->
+
+<!--            <route>-->
+<!--                <link refId="S5"/>-->
+<!--                <link refId="L3"/>-->
+<!--                <link refId="L4"/>-->
+<!--                <link refId="S2"/>-->
+<!--            </route>-->
+
+<!--            <departures>-->
+<!--                <departure id="W01" departureTime="17:05:00" vehicleRefId="bus107"/>-->
+<!--                <departure id="W02" departureTime="17:15:00" vehicleRefId="bus108"/>-->
+<!--                <departure id="W03" departureTime="17:25:00" vehicleRefId="bus109"/>-->
+<!--                <departure id="W04" departureTime="17:35:00" vehicleRefId="bus110"/>-->
+<!--                <departure id="W05" departureTime="17:45:00" vehicleRefId="bus111"/>-->
+<!--                <departure id="W06" departureTime="17:55:00" vehicleRefId="bus112"/>-->
+<!--            </departures>-->
+<!--        </transitRoute>-->
+<!--    </transitLine>-->
+
+    <transitLine id="southPandR">
+        <attributes>
+            <attribute name="gtfs_agency_id" class="java.lang.String">dinasBusCo</attribute>
+            <attribute name="gtfs_route_short_name" class="java.lang.String">southvillePR</attribute>
+            <attribute name="gtfs_route_type" class="java.lang.String">3</attribute>
+        </attributes>
+
+        <transitRoute id="Sth">
+            <transportMode>bus</transportMode>
+
+            <routeProfile>
+                <stop refId="stop_S1" arrivalOffset="00:00:00" departureOffset="00:00:00" awaitDeparture="true"/>
+                <stop refId="stop_S3" arrivalOffset="00:01:00" departureOffset="00:01:00" awaitDeparture="true"/>
+                <stop refId="stop_LS" arrivalOffset="00:04:00" departureOffset="00:04:30" awaitDeparture="true"/>
+                <stop refId="stop_LW" arrivalOffset="00:06:30" departureOffset="00:07:00" awaitDeparture="true"/>
+                <stop refId="stop_LN" arrivalOffset="00:09:00" departureOffset="00:09:30" awaitDeparture="true"/>
+                <stop refId="stop_LE" arrivalOffset="00:11:30" departureOffset="00:12:00" awaitDeparture="true"/>
+                <stop refId="stop_S4" arrivalOffset="00:15:00" departureOffset="00:15:00" awaitDeparture="true"/>
+                <stop refId="stop_S2" arrivalOffset="00:16:00" departureOffset="00:16:00" awaitDeparture="true"/>
+
+            </routeProfile>
+
+            <route>
+                <link refId="S7s"/>
+                <link refId="S7"/>
+                <link refId="L4"/>
+                <link refId="L1"/>
+                <link refId="L2"/>
+                <link refId="L3"/>
+                <link refId="S8"/>
+                <link refId="S8s"/>
+            </route>
+
+            <departures>
+                <departure id="S01" departureTime="06:55:00" vehicleRefId="bus113"/>
+                <departure id="S02" departureTime="07:00:00" vehicleRefId="bus114"/>
+                <departure id="S03" departureTime="07:05:00" vehicleRefId="bus115"/>
+                <departure id="S04" departureTime="07:10:00" vehicleRefId="bus116"/>
+                <departure id="S05" departureTime="07:15:00" vehicleRefId="bus117"/>
+                <departure id="S06" departureTime="07:20:00" vehicleRefId="bus118"/>
+                <departure id="S07" departureTime="07:25:00" vehicleRefId="bus119"/>
+                <departure id="S08" departureTime="07:30:00" vehicleRefId="bus120"/>
+                <departure id="S09" departureTime="07:35:00" vehicleRefId="bus121"/>
+                <departure id="S10" departureTime="08:00:00" vehicleRefId="bus122"/>
+
+                <departure id="S11" departureTime="16:50:00" vehicleRefId="bus113"/>
+                <departure id="S12" departureTime="16:55:00" vehicleRefId="bus114"/>
+                <departure id="S13" departureTime="17:05:00" vehicleRefId="bus115"/>
+                <departure id="S14" departureTime="17:10:00" vehicleRefId="bus116"/>
+                <departure id="S15" departureTime="17:15:00" vehicleRefId="bus117"/>
+                <departure id="S16" departureTime="17:20:00" vehicleRefId="bus118"/>
+                <departure id="S17" departureTime="17:25:00" vehicleRefId="bus119"/>
+                <departure id="S18" departureTime="17:30:00" vehicleRefId="bus120"/>
+                <departure id="S19" departureTime="18:00:00" vehicleRefId="bus121"/>
+
+
+
+            </departures>
+        </transitRoute>
+    </transitLine>
+
+
+</transitSchedule>

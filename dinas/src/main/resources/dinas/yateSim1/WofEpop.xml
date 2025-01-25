@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE population SYSTEM "http://www.matsim.org/files/dtd/population_v6.dtd"> 
+ 
+<population> 
+ 
+    <attributes> 
+             <attribute name="coordinateReferenceSystem" class="java.lang.String">EPSG:27700</attribute>  
+    </attributes> 
+ 
+ 
+    <person id="0wq1iu">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="358225" y="174456" end_time="08:49:46" />
+             <leg mode="car" />
+             <activity type="work" x="358219" y="175105" end_time="19:06:01" />
+             <leg mode="car" />
+             <activity type="home" x="358225" y="174456" />
+        </plan>
+    </person>
+
+    <person id="0jvzap">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="363205" y="177290" end_time="09:50:30" />
+             <leg mode="car" />
+             <activity type="leisure" x="356905" y="173144" end_time="15:48:47" />
+             <leg mode="car" />
+             <activity type="home" x="363205" y="177290" />
+        </plan>
+    </person>
+
+    <person id="0i2ks7">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="336320" y="163618" end_time="06:56:57" />
+             <leg mode="car" />
+             <activity type="work" x="332135" y="161604" end_time="15:51:33" />
+             <leg mode="car" />
+             <activity type="home" x="336320" y="163618" />
+        </plan>
+    </person>
+
+    <person id="07rfrh">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="335752" y="163744" end_time="06:07:09" />
+             <leg mode="car" />
+             <activity type="work" x="333460" y="161006" end_time="14:59:33" />
+             <leg mode="car" />
+             <activity type="home" x="335752" y="163744" />
+        </plan>
+    </person>
+
+    <person id="04j3u5">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="357972" y="176054" end_time="10:30:56" />
+             <leg mode="car" />
+             <activity type="leisure" x="361332" y="175946" end_time="16:39:42" />
+             <leg mode="car" />
+             <activity type="home" x="357972" y="176054" />
+        </plan>
+    </person>
+
+    <person id="0dgkx6">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="358431" y="174274" end_time="09:23:37" />
+             <leg mode="car" />
+             <activity type="education" x="356849" y="176361" end_time="15:10:29" />
+             <leg mode="car" />
+             <activity type="home" x="358431" y="174274" />
+        </plan>
+    </person>
+
+    <person id="0mrqdx">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="360633" y="167458" end_time="10:21:37" />
+             <leg mode="car" />
+             <activity type="leisure" x="364687" y="176164" end_time="15:24:07" />
+             <leg mode="car" />
+             <activity type="home" x="360633" y="167458" />
+        </plan>
+    </person>
+
+    <person id="0mrufx">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="352743" y="177398" end_time="07:41:10" />
+             <leg mode="car" />
+             <activity type="work" x="360551" y="171829" end_time="16:50:20" />
+             <leg mode="car" />
+             <activity type="home" x="352743" y="177398" />
+        </plan>
+    </person>
+
+    <person id="0zz7hn">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="358946" y="159720" end_time="07:39:42" />
+             <leg mode="car" />
+             <activity type="work" x="345874" y="160769" end_time="17:16:00" />
+             <leg mode="car" />
+             <activity type="home" x="358946" y="159720" />
+        </plan>
+    </person>
+
+    <person id="0kddqu">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="362560" y="175226" end_time="10:24:49" />
+             <leg mode="car" />
+             <activity type="leisure" x="379869" y="183646" end_time="15:42:17" />
+             <leg mode="car" />
+             <activity type="home" x="362560" y="175226" />
+        </plan>
+    </person>
+
+    <person id="061rry">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="361531" y="182288" end_time="08:36:29" />
+             <leg mode="car" />
+             <activity type="work" x="362079" y="178409" end_time="15:15:00" />
+             <leg mode="car" />
+             <activity type="home" x="361531" y="182288" />
+        </plan>
+    </person>
+
+    <person id="0sdanp">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="365606" y="172860" end_time="10:03:50" />
+             <leg mode="car" />
+             <activity type="work" x="364087" y="172456" end_time="18:30:27" />
+             <leg mode="car" />
+             <activity type="home" x="365606" y="172860" />
+        </plan>
+    </person>
+
+    <person id="0rigqx">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="360458" y="174050" end_time="09:47:32" />
+             <leg mode="car" />
+             <activity type="leisure" x="363038" y="169255" end_time="17:17:05" />
+             <leg mode="car" />
+             <activity type="home" x="360458" y="174050" />
+        </plan>
+    </person>
+
+    <person id="0fxkhq">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="366024" y="168231" end_time="07:47:29" />
+             <leg mode="car" />
+             <activity type="work" x="357557" y="174661" end_time="17:04:12" />
+             <leg mode="car" />
+             <activity type="home" x="366024" y="168231" />
+        </plan>
+    </person>
+
+    <person id="03bsdu">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="367089" y="176332" end_time="10:17:52" />
+             <leg mode="car" />
+             <activity type="education" x="366743" y="173408" end_time="14:14:10" />
+             <leg mode="car" />
+             <activity type="home" x="367089" y="176332" />
+        </plan>
+    </person>
+
+    <person id="0hc5i3">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="334527" y="161606" end_time="07:47:52" />
+             <leg mode="car" />
+             <activity type="work" x="331796" y="161568" end_time="17:09:43" />
+             <leg mode="car" />
+             <activity type="home" x="334527" y="161606" />
+        </plan>
+    </person>
+
+    <person id="0en2v3">
+        <attributes>
+             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>
+             <attribute name="carAvailability" class="java.lang.String">all</attribute>
+             <attribute name="hasLicence" class="java.lang.String">yes</attribute>
+             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>
+        </attributes>
+
+        <plan>
+             <activity type="home" x="333068" y="160200" end_time="07:20:01" />
+             <leg mode="car" />
+             <activity type="work" x="347173" y="163003" end_time="17:35:41" />
+             <leg mode="car" />
+             <activity type="home" x="333068" y="160200" />
+        </plan>
+    </person>
+
+</population>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd"> 
+ 
+ <vehicleType id="defaultTransitVehicleType"> 
+   <capacity seats="101" standingRoomInPersons="0"> 
+   </capacity> 
+   <length meter="7.5"/> 
+   <width meter="1.0"/> 
+   <costInformation> 
+   </costInformation> 
+   <passengerCarEquivalents pce="0.0"/> 
+   <networkMode networkMode="car"/> 
+   <flowEfficiencyFactor factor="1.0"/> 
+ </vehicleType> 
+ 
+ <vehicle id="bus7oJEvCT" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7RnUy4G" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7v96qwb" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7p8DBbO" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7jCg2TR" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7HvI5Om" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7optbEe" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7PmZW05" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7iGZF2y" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7MPYpaF" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7AeMRl7" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7cT5nMk" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7YYLpyr" type="defaultTransitVehicleType"/>
+ <vehicle id="bus74EWuzI" type="defaultTransitVehicleType"/>
+ <vehicle id="bus78Gu968" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7Fnn4i1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7w8FbMD" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7PK5gDp" type="defaultTransitVehicleType"/>
+ <vehicle id="bus77WCsgm" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7ninEEV" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7iDXJZF" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7k7BIlz" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7dGLwL3" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7bh40Vv" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7RwjQuC" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7pG5JFD" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7LLOuNI" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7K9UyTF" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7ZU4LCB" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7I0NxNm" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7IZcRGS" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7WIpgWt" type="defaultTransitVehicleType"/>
+ <vehicle id="bus75kolic" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7rIPZ1V" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7mLIDg1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7l57RF2" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6i0sBSC" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6WOOhmr" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6X4qUaZ" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6zwCXW0" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6nKnIOC" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6UZcmLF" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6A8RgE1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6m7BXtg" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6gDvWOy" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6mHWIIL" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6lBu9Yl" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6spsrXH" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6KwOvI3" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6PjAPaS" type="defaultTransitVehicleType"/>
+ <vehicle id="bus603biE1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6ohAtOm" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6bADksD" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6xKKvoX" type="defaultTransitVehicleType"/>
+ <vehicle id="bus693nd4A" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6N4GkbO" type="defaultTransitVehicleType"/>
+ <vehicle id="bus60wcIg5" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6nV0SfE" type="defaultTransitVehicleType"/>
+ <vehicle id="bus64kiYaO" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6f7QXkx" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6iHCoA6" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6hve5m7" type="defaultTransitVehicleType"/>
+ <vehicle id="bus60ktotJ" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6n4V5n9" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6fObgk0" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6fLZ8og" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6W3QgIK" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6yevFXg" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6nILL31" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6cU7bp1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6issqpB" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6r9loi6" type="defaultTransitVehicleType"/>
+</vehicleDefinitions>

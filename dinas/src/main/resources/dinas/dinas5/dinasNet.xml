@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE network SYSTEM "http://www.matsim.org/files/dtd/network_v2.dtd">
+
+<network name="dinas network">
+
+
+    <nodes>
+
+        <node id="Wo" x="0" y="5000"/>
+        <node id="Eo" x="10000" y="5000"/>
+        <node id="So" x="5000" y="0"/>
+        <node id="No" x="5000" y="10000"/>
+        <node id="Wi" x="4000" y="5000"/>
+        <node id="Ei" x="6000" y="5000"/>
+        <node id="Si" x="5000" y="4000"/>
+        <node id="Ni" x="5000" y="6000"/>
+        <node id="Ss" x="5000" y="-100"/>
+
+    </nodes>
+
+    <links capperiod="01:00:00">
+        <link id="R1" from="Wo" to="No" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R2" from="No" to="Eo" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R3" from="Eo" to="So" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R4" from="So" to="Wo" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R5" from="No" to="Wo" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R6" from="Wo" to="So" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R7" from="So" to="Eo" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="R8" from="Eo" to="No" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+
+
+        <link id="S1" from="Wo" to="Wi" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes=" bus, bike"/>
+        <link id="S2" from="Wi" to="Wo" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes=" bus, bike"/>
+        <link id="S3" from="No" to="Ni" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes=" bus, bike"/>
+        <link id="S4" from="Ni" to="No" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes=" bus, bike"/>
+        <link id="S5" from="Eo" to="Ei" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="S6" from="Ei" to="Eo" length="5000" capacity="500" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="S7" from="So" to="Si" length="3000" capacity="1800" freespeed="30" permlanes="1"
+              modes="bus, bike"/>
+        <link id="S8" from="Si" to="So" length="3000" capacity="1800" freespeed="30" permlanes="1"
+              modes="bus, bike"/>
+        <link id="S7s" from="Ss" to="So" length="100" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="S8s" from="So" to="Ss" length="100" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+
+        <link id="L1" from="Wi" to="Ni" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">0</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">0</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">0</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">0</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL1</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L2" from="Ni" to="Ei" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">0</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">2</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">2</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL2</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L3" from="Ei" to="Si" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">20</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">50</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL3</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L4" from="Si" to="Wi" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">20</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">50</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL4</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L5" from="Ni" to="Wi" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">20</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">50</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L6" from="Wi" to="Si" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">20</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">50</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL6</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L7" from="Si" to="Ei" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">5</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">5</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL7</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="L8" from="Ei" to="Ni" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">0</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">2</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">2</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">2</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL8</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+
+    </links>
+</network>

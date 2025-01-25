@@ -14,6 +14,9 @@ import org.matsim.pt.routes.TransitPassengerRoute;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
+import static org.matsim.api.core.v01.TransportMode.*;
+import static org.matsim.api.core.v01.TransportMode.bike;
+
 public class PtPredictor extends CachedVariablePredictor<PtVariables> {
 	private CostModel costModel;
 
@@ -43,14 +46,16 @@ public class PtPredictor extends CachedVariablePredictor<PtVariables> {
 				Leg leg = (Leg) element;
 
 				switch (leg.getMode()) {
-				case TransportMode.walk:
-				case TransportMode.non_network_walk:
+				case bike:
+				case car:
+				case walk:
+				case non_network_walk:
 					accessEgressTime_min += leg.getTravelTime().seconds() / 60.0;
 					break;
-				case TransportMode.transit_walk:
+				case transit_walk:
 					waitingTime_min += leg.getTravelTime().seconds() / 60.0;
 					break;
-				case TransportMode.pt:
+				case pt:
 					TransitPassengerRoute route = (TransitPassengerRoute) leg.getRoute();
 
 					double departureTime = leg.getDepartureTime().seconds();

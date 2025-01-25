@@ -13,8 +13,8 @@ import org.eqasim.examples.corsica_drt.analysis.DvrpAnalsisModule;
 import org.eqasim.examples.corsica_drt.mode_choice.CorsicaDrtModeAvailability;
 import org.eqasim.examples.corsica_drt.rejections.RejectionConstraint;
 import org.eqasim.examples.corsica_drt.rejections.RejectionModule;
-import org.eqasim.ile_de_france.IDFConfigurator;
-import org.eqasim.ile_de_france.mode_choice.IDFModeChoiceModule;
+import org.eqasim.dinas.IDFConfigurator;
+import org.eqasim.dinas.mode_choice.IDFModeChoiceModule;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.contrib.drt.optimizer.insertion.DrtInsertionSearchParams;
 import org.matsim.contrib.drt.optimizer.insertion.SelectiveInsertionSearchParams;
@@ -54,7 +54,7 @@ public class RunCorsicaDrtSimulation {
 				.allowOptions("use-rejection-constraint") //
 				.allowPrefixes("mode-parameter", "cost-parameter") //
 				.build();
-		URL configUrl = Resources.getResource("corsica/corsica_config.xml");
+		URL configUrl = Resources.getResource("dinas/corsica_config.xml");
 
 		Config config = ConfigUtils.loadConfig(configUrl, IDFConfigurator.getConfigGroups());
 

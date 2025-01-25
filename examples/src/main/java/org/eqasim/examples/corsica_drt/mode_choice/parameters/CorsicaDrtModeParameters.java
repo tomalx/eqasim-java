@@ -1,6 +1,6 @@
 package org.eqasim.examples.corsica_drt.mode_choice.parameters;
 
-import org.eqasim.ile_de_france.mode_choice.parameters.IDFModeParameters;
+import org.eqasim.dinas.mode_choice.parameters.IDFModeParameters;
 
 public class CorsicaDrtModeParameters extends IDFModeParameters {
 	public class ParisDrtParameters {

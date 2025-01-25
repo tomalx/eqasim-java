@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<households xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/households_v1.0.xsd">
+
+    <household id="503">
+        <members>
+            <personId refId="435"/>
+        </members>
+        <attributes>
+            <attribute name="carAvailability" class="java.lang.String">all</attribute>
+            <attribute name="bikeAvailability" class="java.lang.String">some</attribute>
+            <attribute name="household_income" class="java.lang.Double">181251</attribute>
+            <attribute name="censusId" class="java.lang.Long">503</attribute>
+        </attributes>
+    </household>
+
+    <household id="508">
+        <members>
+            <personId refId="435"/>
+        </members>
+        <attributes>
+            <attribute name="carAvailability" class="java.lang.String">all</attribute>
+            <attribute name="bikeAvailability" class="java.lang.String">some</attribute>
+            <attribute name="household_income" class="java.lang.Double">171883</attribute>
+            <attribute name="censusId" class="java.lang.Long">508</attribute>
+        </attributes>
+    </household>
+
+    <household id="517">
+        <members>
+            <personId refId="435"/>
+        </members>
+        <attributes>
+            <attribute name="carAvailability" class="java.lang.String">all</attribute>
+            <attribute name="bikeAvailability" class="java.lang.String">some</attribute>
+            <attribute name="household_income" class="java.lang.Double">132649</attribute>
+            <attribute name="censusId" class="java.lang.Long">517</attribute>
+        </attributes>
+    </household>
+
+    <household id="518">
+        <members>
+            <personId refId="Art5"/>
+            <personId refId="Osa7"/>
+        </members>
+        <attributes>
+            <attribute name="carAvailability" class="java.lang.String">all</attribute>
+            <attribute name="bikeAvailability" class="java.lang.String">some</attribute>
+            <attribute name="household_income" class="java.lang.Double">42888</attribute>
+            <attribute name="censusId" class="java.lang.Long">518</attribute>
+        </attributes>
+    </household>
+
+</households>

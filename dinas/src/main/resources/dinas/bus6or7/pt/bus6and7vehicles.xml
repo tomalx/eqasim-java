@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd"> 
+ 
+ <vehicleType id="defaultTransitVehicleType"> 
+   <capacity seats="101" standingRoomInPersons="0"> 
+   </capacity> 
+   <length meter="7.5"/> 
+   <width meter="1.0"/> 
+   <costInformation> 
+   </costInformation> 
+   <passengerCarEquivalents pce="0.0"/> 
+   <networkMode networkMode="car"/> 
+   <flowEfficiencyFactor factor="1.0"/> 
+ </vehicleType> 
+ 
+ <vehicle id="bus7gNsXG3" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7XIwVl1" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7OWPU5D" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7Db5T37" type="defaultTransitVehicleType"/>
+ <vehicle id="bus79MWW9e" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7YB724j" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7xDrAHi" type="defaultTransitVehicleType"/>
+ <vehicle id="bus7xCHBso" type="defaultTransitVehicleType"/>
+ <vehicle id="bus69q3tlC" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6Nf3BYH" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6RgNi2Q" type="defaultTransitVehicleType"/>
+ <vehicle id="bus67S3Ibj" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6OzzERb" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6pc0WYv" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6YzjaNH" type="defaultTransitVehicleType"/>
+ <vehicle id="bus6xbxPOG" type="defaultTransitVehicleType"/>
+</vehicleDefinitions>

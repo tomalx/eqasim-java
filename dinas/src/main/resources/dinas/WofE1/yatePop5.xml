@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plans SYSTEM "http://www.matsim.org/files/dtd/plans_v4.dtd">
+
+<plans>
+ 
+
+ 
+ 
+    <person id="ejjo473" car_avail="never" age="30" license="no" >
+
+        <plan>
+             <act type="home" x="370963" y="182324" end_time="09:30:04" />
+             <leg mode="bike" />
+             <act type="leisure" x="363628" y="168197" end_time="13:33:46" />
+             <leg mode="bike" />
+             <act type="home" x="370963" y="182324" />
+        </plan>
+    </person>
+
+    <person id="ajzy547">
+<!--        <attributes>-->
+<!--             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="carAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="hasLicence" class="java.lang.String">yes</attribute>-->
+<!--             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>-->
+<!--        </attributes>-->
+
+        <plan>
+             <act type="home" x="373561" y="181937" end_time="09:09:11" />
+             <leg mode="car" />
+             <act type="work" x="371349" y="182420" end_time="16:25:52" />
+             <leg mode="car" />
+             <act type="shop" x="371635" y="182379" end_time="16:55:11" />
+             <leg mode="car" />
+             <act type="home" x="373561" y="181937" />
+        </plan>
+    </person>
+
+    <person id="063uk1">
+        <plan>
+            <act type="home" x="370790" y="183882" end_time="10:00:32"/>
+            <leg mode="pt"/>
+            <act type="work" x="361558" y="183249" end_time="18:40:37"/>
+            <leg mode="pt"/>
+            <act type="home" x="370790" y="183882"/>
+        </plan>
+    </person>
+
+    <person id="ctiv791">
+<!--        <attributes>-->
+<!--             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="carAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="hasLicence" class="java.lang.String">yes</attribute>-->
+<!--             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>-->
+<!--        </attributes>-->
+
+        <plan>
+             <act type="home" x="370838" y="182575" end_time="08:17:32" />
+             <leg mode="car" />
+             <act type="escort" x="370570" y="184027" end_time="08:41:03" />
+             <leg mode="car" />
+             <act type="work" x="362344" y="178432" end_time="14:59:23" />
+             <leg mode="car" />
+             <act type="escort" x="370570" y="184027" end_time="15:35:54" />
+             <leg mode="car" />
+             <act type="home" x="370838" y="182575" />
+        </plan>
+    </person>
+
+    <person id="xyjc350">
+<!--        <attributes>-->
+<!--             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="carAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="hasLicence" class="java.lang.String">yes</attribute>-->
+<!--             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>-->
+<!--        </attributes>-->
+
+        <plan>
+             <act type="home" x="369267" y="182379" end_time="07:56:49" />
+             <leg mode="car" />
+             <act type="work" x="358713" y="177790" end_time="12:25:09" />
+             <leg mode="car" />
+             <act type="shop" x="357062" y="177286" end_time="13:22:33" />
+             <leg mode="car" />
+             <act type="work" x="358713" y="177790" end_time="17:03:11" />
+             <leg mode="car" />
+             <act type="home" x="369267" y="182379" />
+        </plan>
+    </person>
+
+    <person id="yxor419">
+<!--        <attributes>-->
+<!--             <attribute name="bikeAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="carAvailability" class="java.lang.String">all</attribute>-->
+<!--             <attribute name="hasLicence" class="java.lang.String">yes</attribute>-->
+<!--             <attribute name="hasPtSubscription" class="java.lang.Boolean">yes</attribute>-->
+<!--        </attributes>-->
+
+        <plan>
+             <act type="home" x="374505" y="183780" end_time="10:57:36" />
+             <leg mode="car" />
+             <act type="shop" x="371120" y="182638" end_time="11:54:47" />
+             <leg mode="car" />
+             <act type="home" x="374505" y="183780" end_time="13:50:58" />
+             <leg mode="car" />
+             <act type="work" x="369695" y="175923" end_time="23:02:29" />
+             <leg mode="car" />
+             <act type="home" x="374505" y="183780" />
+        </plan>
+    </person>
+
+    
+
+   
+
+</plans>

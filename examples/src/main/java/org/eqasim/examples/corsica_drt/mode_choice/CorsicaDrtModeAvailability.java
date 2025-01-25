@@ -3,7 +3,7 @@ package org.eqasim.examples.corsica_drt.mode_choice;
 import java.util.Collection;
 import java.util.List;
 
-import org.eqasim.ile_de_france.mode_choice.IDFModeAvailability;
+import org.eqasim.dinas.mode_choice.IDFModeAvailability;
 import org.matsim.api.core.v01.TransportMode;
 import org.matsim.api.core.v01.population.Person;
 import org.matsim.contribs.discrete_mode_choice.model.DiscreteModeChoiceTrip;

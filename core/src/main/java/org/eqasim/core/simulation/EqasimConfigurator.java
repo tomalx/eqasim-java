@@ -9,6 +9,7 @@ import org.eqasim.core.components.traffic.EqasimTrafficQSimModule;
 import org.eqasim.core.components.transit.EqasimTransitModule;
 import org.eqasim.core.components.transit.EqasimTransitQSimModule;
 import org.eqasim.core.simulation.calibration.CalibrationConfigGroup;
+import org.eqasim.core.parkingCost.*;
 import org.matsim.api.core.v01.Id;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.api.core.v01.population.Person;
@@ -28,15 +29,18 @@ public class EqasimConfigurator {
 		return new ConfigGroup[] { //
 				new SwissRailRaptorConfigGroup(), //
 				new EqasimConfigGroup(), //
-				new DiscreteModeChoiceConfigGroup(), //
+				new DiscreteModeChoiceConfigGroup(),
+				new ParkingCostConfigGroup(),//
 				new CalibrationConfigGroup() };
+
 	}
 
 	static public List<AbstractModule> getModules() {
 		return Arrays.asList( //
 				new SwissRailRaptorModule(), //
 				new EqasimTransitModule(), //
-				new DiscreteModeChoiceModule(), //
+				new DiscreteModeChoiceModule(),
+				new ParkingCostModule(),//
 				new EqasimComponentsModule() //
 		);
 	}

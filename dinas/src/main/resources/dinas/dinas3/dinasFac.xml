@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+    <facility id="home_W001" linkId="R1" x="10" y="5010">
+        <activity type="home">
+        </activity>
+    </facility>
+
+    <facility id="home_W002" linkId="C11" x="0" y="5050">
+        <activity type="home">
+        </activity>
+    </facility>
+
+   <!-- <facility id="stop_S1" x="5000" y="-50" linkId="S7s">
+        <activity type="pt_interaction">
+        </activity>
+    </facility>
+
+    <facility id="stop_LN" linkId="L2" x="5000" y="6000">
+        <activity type="pt_interaction">
+        </activity>
+    </facility>
+
+    <facility id="stop_S2" x="5000" y="-50" linkId="S8s">
+        <activity type="pt_interaction">
+        </activity>
+    </facility>-->
+
+   
+
+    <facility id="work_C001" linkId="A1" x="4800" y="5600">
+        <activity type="work">
+        </activity>
+        <attributes>
+            <attribute name="dailyPCost" class="java.lang.Double">30</attribute>
+            <attribute name="extraHourPCost" class="java.lang.Double">10</attribute>
+            <attribute name="maxDailyPCost" class="java.lang.Double">50</attribute>
+            <attribute name="oneHourPCost" class="java.lang.Double">10</attribute>
+            <attribute name="origid" class="java.lang.String">parkingL2</attribute>
+            <attribute name="type" class="java.lang.String">residential</attribute>
+        </attributes>
+    </facility>
+
+</facilities>

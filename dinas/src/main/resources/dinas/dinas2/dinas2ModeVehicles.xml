@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v2.0.xsd">
+
+
+    <vehicleType id="car">
+<!--       <description>"car"</description>-->
+        <maximumVelocity meterPerSecond="15"/>
+        <passengerCarEquivalents pce="1"/>
+
+    </vehicleType>
+
+    <vehicleType id="bicycle">
+
+        <capacity seats="0" standingRoomInPersons="0">
+
+        </capacity>
+        <length meter="7.5"/>
+        <width meter="1.0"/>
+        <maximumVelocity meterPerSecond="10"/>
+        <costInformation>
+
+        </costInformation>
+        <passengerCarEquivalents pce="0.25"/>
+        <networkMode networkMode="bicycle"/>
+        <flowEfficiencyFactor factor="1.0"/>
+    </vehicleType>
+
+
+<!--
+    <vehicle id="1" type="bike"/>
+    <vehicle id="2" type="bike"/>
+    <vehicle id="3" type="bike"/>
+    <vehicle id="4" type="bike"/>
+    <vehicle id="5" type="bike"/>
+    <vehicle id="6" type="bike"/>
+
+    <vehicle id="7" type="car"/>
+    <vehicle id="8" type="car"/>
+    <vehicle id="9" type="car"/>
+    <vehicle id="10" type="car"/>
+    <vehicle id="11" type="car"/>
+    <vehicle id="12" type="car"/>
+    <vehicle id="13" type="car"/>
+    <vehicle id="14" type="car"/>
+    <vehicle id="15" type="car"/>
+    <vehicle id="16" type="car"/>
+    <vehicle id="17" type="car"/>
+    <vehicle id="18" type="car"/>
+    <vehicle id="19" type="car"/>
+    <vehicle id="20" type="car"/>
+    <vehicle id="21" type="car"/>
+    <vehicle id="22" type="car"/>
+    <vehicle id="23" type="car"/>
+    <vehicle id="24" type="car"/>
+    <vehicle id="25" type="car"/>
+    <vehicle id="26" type="car"/>
+    <vehicle id="27" type="car"/>
+    <vehicle id="28" type="car"/>
+    <vehicle id="29" type="car"/>
+    <vehicle id="30" type="car"/>
+-->
+
+
+</vehicleDefinitions>

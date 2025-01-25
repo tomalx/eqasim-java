@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE network SYSTEM "http://www.matsim.org/files/dtd/network_v2.dtd">
+
+<network name="dinas network">
+
+
+    <nodes>
+
+        <node id="w2" x="0" y="5000"/>
+        <node id="e2" x="10000" y="5000"/>
+        <node id="s2" x="5000" y="0"/>
+        <node id="n2" x="5000" y="10000"/>
+        <node id="w1" x="4000" y="5000"/>
+        <node id="e1" x="6000" y="5000"/>
+        <node id="s1" x="5000" y="4000"/>
+        <node id="n1" x="5000" y="6000"/>
+        <node id="s3" x="5000" y="-1000"/>
+        <node id="e3" x="12000" y="5000"/>
+        <node id="n3" x="5000" y="12000"/>
+        <node id="w3" x="-2000" y="5000"/>
+        
+        <node id="w4" x="-1000" y="6000"/>
+        <node id="w5" x="-1000" y="4000"/>
+        <node id="n4" x="4000" y="11000"/>
+        <node id="n5" x="6000" y="11000"/>
+        <node id="e4" x="11000" y="6000"/>
+        <node id="e5" x="11000" y="4000"/>
+        <node id="s4" x="4500" y="-500"/>
+        <node id="s5" x="5500" y="-500"/>
+        
+        <node id="nw1" x="3500" y="6500"/>
+        <node id="ne1" x="6500" y="6500"/>
+        <node id="se1" x="6500" y="3500"/>
+        <node id="sw1" x="3500" y="3500"/>
+        <node id="nw2" x="2000" y="8000"/>
+        <node id="ne2" x="8000" y="8000"/>
+        <node id="se2" x="8000" y="2000"/>
+        <node id="sw2" x="2000" y="2000"/>
+        <node id="sw3" x="1800" y="1800"/>
+
+    </nodes>
+
+    <links capperiod="01:00:00">
+        <link id="C11" from="w2" to="nw2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C12" from="nw2" to="n2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C13" from="n2" to="ne2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C14" from="ne2" to="e2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C15" from="e2" to="se2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C16" from="se2" to="s2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C17" from="s2" to="sw2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C18" from="sw2" to="w2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+              
+        <link id="C01" from="w1" to="nw1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C02" from="nw1" to="n1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C03" from="n1" to="ne1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C04" from="ne1" to="e1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C05" from="e1" to="se1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C06" from="se1" to="s1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C07" from="s1" to="sw1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="C08" from="sw1" to="w1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+              
+        <link id="A11" from="nw2" to="w2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A12" from="n2" to="nw2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A13" from="ne2" to="n2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A14" from="e2" to="ne2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A15" from="se2" to="e2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A16" from="s2" to="se2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A17" from="sw2" to="s2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A18" from="w2" to="sw2" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+              
+        <link id="A01" from="nw1" to="w1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A02" from="n1" to="nw1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">20</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">10</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">100</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">20</attribute>
+                <attribute name="origid" class="java.lang.String">parkingA02</attribute>
+<!--                <attribute name="type" class="java.lang.String">residential</attribute>-->
+            </attributes>
+        </link>
+
+        <link id="A03" from="ne1" to="n1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A04" from="e1" to="ne1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A05" from="se1" to="e1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A06" from="s1" to="se1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A07" from="sw1" to="s1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="A08" from="w1" to="sw1" length="5000" capacity="1800" freespeed="30" permlanes="1"
+              modes="car, bus, bike"/>
+              
+              
+        <link id="WX1" from="w3" to="w4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WX2" from="w4" to="w2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WX3" from="w2" to="w1" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="WX4" from="w5" to="w2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WX5" from="w3" to="w5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WZ1" from="w4" to="w3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WZ2" from="w2" to="w4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WZ3" from="w1" to="w2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="WZ4" from="w2" to="w5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="WZ5" from="w5" to="w3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        
+     
+       
+        <link id="NX1" from="n3" to="n4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NX2" from="n4" to="n2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NX3" from="n2" to="n1" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NX4" from="n5" to="n2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NX5" from="n3" to="n5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NZ1" from="n4" to="n3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NZ2" from="n2" to="n4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NZ3" from="n1" to="n2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NZ4" from="n2" to="n5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="NZ5" from="n5" to="n3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+              
+        <link id="EX1" from="e3" to="e4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EX2" from="e4" to="e2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EX3" from="e2" to="e1" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="EX4" from="e5" to="e2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EX5" from="e3" to="e5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EZ1" from="e4" to="e3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EZ2" from="e2" to="e4" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EZ3" from="e1" to="e2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="EZ4" from="e2" to="e5" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="EZ5" from="e5" to="e3" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+              
+        <link id="SX1" from="s3" to="s4" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SX2" from="s4" to="s2" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SX3" from="s2" to="s1" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="SX4" from="s5" to="s2" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SX5" from="s3" to="s5" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SZ1" from="s4" to="s3" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SZ2" from="s2" to="s4" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SZ3" from="s1" to="s2" length="2000" capacity="1800" freespeed="20" permlanes="1"
+              modes="bus, bike"/>
+        <link id="SZ4" from="s2" to="s5" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        <link id="SZ5" from="s5" to="s3" length="500" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+
+        <link id="SWX1" from="sw3" to="sw2" length="200" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+
+        <link id="SWZ1" from="sw2" to="sw3" length="200" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike"/>
+        
+        
+
+       
+       
+        <link id="C1" from="w1" to="n1" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">20</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">60</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">8</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="C2" from="n1" to="e1" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">20</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">60</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">8</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="C3" from="e1" to="s1" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">10</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">3</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">30</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="C4" from="s1" to="w1" length="3000" capacity="1800" freespeed="20" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">10</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">3</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">30</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="A1" from="n1" to="w1" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">20</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">60</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">8</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="A4" from="w1" to="s1" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">10</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">3</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">30</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="A3" from="s1" to="e1" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">10</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">3</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">30</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+        <link id="A2" from="e1" to="n1" length="3000" capacity="1800" freespeed="5" permlanes="1"
+              modes="car, bus, bike">
+            <attributes>
+                <attribute name="dailyPCost" class="java.lang.Double">20</attribute>
+                <attribute name="extraHourPCost" class="java.lang.Double">5</attribute>
+                <attribute name="maxDailyPCost" class="java.lang.Double">60</attribute>
+                <attribute name="oneHourPCost" class="java.lang.Double">8</attribute>
+                <attribute name="origid" class="java.lang.String">parkingL5</attribute>
+                <attribute name="type" class="java.lang.String">residential</attribute>
+            </attributes>
+        </link>
+
+    </links>
+</network>
