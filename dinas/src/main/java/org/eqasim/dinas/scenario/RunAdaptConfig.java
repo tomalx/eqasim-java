@@ -6,16 +6,20 @@ import org.eqasim.dinas.IDFConfigurator;
 import org.eqasim.dinas.mode_choice.IDFModeChoiceModule;
 import org.matsim.api.core.v01.TransportMode;
 import org.matsim.contribs.discrete_mode_choice.modules.config.DiscreteModeChoiceConfigGroup;
+import org.matsim.core.config.CommandLine;
 import org.matsim.core.config.CommandLine.ConfigurationException;
 import org.matsim.core.config.Config;
-import org.matsim.core.config.groups.PlanCalcScoreConfigGroup;
+import org.matsim.core.config.groups.QSimConfigGroup;
+import org.matsim.core.config.groups.QSimConfigGroup.VehiclesSource;
+import org.matsim.core.config.groups.VehiclesConfigGroup;
 
 public class RunAdaptConfig {
 	static public void main(String[] args) throws ConfigurationException {
-		ConfigAdapter.run(args, IDFConfigurator.getConfigGroups(), RunAdaptConfig::adaptConfiguration);
+		CommandLine cmd = new CommandLine.Builder(args).build();
+		ConfigAdapter.run(args, new IDFConfigurator(cmd), RunAdaptConfig::adaptConfiguration);
 	}
 
-	static public void adaptConfiguration(Config config) {
+	static public void adaptConfiguration(Config config, String prefix) {
 		// Adjust eqasim config
 		EqasimConfigGroup eqasimConfig = EqasimConfigGroup.get(config);
 
@@ -29,11 +33,6 @@ public class RunAdaptConfig {
 				.get(DiscreteModeChoiceConfigGroup.GROUP_NAME);
 
 		dmcConfig.setModeAvailability(IDFModeChoiceModule.MODE_AVAILABILITY_NAME);
-		
-		// Potentially should be moved to the general GenerateConfig class. Wait time
-		// should matter for routing!
-		PlanCalcScoreConfigGroup scoringConfig = config.planCalcScore();
-		scoringConfig.setMarginalUtlOfWaitingPt_utils_hr(-1.0);
 
 		// Calibration results for 5%
 
@@ -42,5 +41,12 @@ public class RunAdaptConfig {
 			config.qsim().setFlowCapFactor(0.045);
 			config.qsim().setStorageCapFactor(0.045);
 		}
+
+		// Vehicles
+		QSimConfigGroup qsimConfig = config.qsim();
+		qsimConfig.setVehiclesSource(VehiclesSource.fromVehiclesData);
+
+		VehiclesConfigGroup vehiclesConfig = config.vehicles();
+		vehiclesConfig.setVehiclesFile(prefix + "vehicles.xml.gz");
 	}
 }

@@ -2,12 +2,8 @@ package org.eqasim.examples.corsica_vdf;
 
 import java.net.URL;
 
-import org.eqasim.core.simulation.analysis.EqasimAnalysisModule;
-import org.eqasim.core.simulation.mode_choice.EqasimModeChoiceModule;
-import org.eqasim.dinas.IDFConfigurator;
-import org.eqasim.dinas.mode_choice.IDFModeChoiceModule;
-import org.eqasim.vdf.VDFConfigGroup;
-import org.eqasim.vdf.VDFModule;
+import org.eqasim.core.simulation.vdf.VDFConfigGroup;
+import org.eqasim.ile_de_france.IDFConfigurator;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.core.config.CommandLine;
 import org.matsim.core.config.CommandLine.ConfigurationException;
@@ -28,23 +24,31 @@ public class RunCorsicaVDFSimulation {
 				.allowPrefixes("mode-parameter", "cost-parameter") //
 				.build();
 
-		URL configUrl = Resources.getResource("dinas/corsica_config.xml");
-		Config config = ConfigUtils.loadConfig(configUrl, IDFConfigurator.getConfigGroups());
+		IDFConfigurator configurator = new IDFConfigurator(cmd);
 
-		config.controler().setLastIteration(2);
+		URL configUrl = Resources.getResource("corsica/corsica_config.xml");
+		Config config = ConfigUtils.loadConfig(configUrl);
+		configurator.updateConfig(config);
+
+		config.controller().setLastIteration(2);
+
+		// VDF: Add config group
 		config.addModule(new VDFConfigGroup());
 
+		// VDF: Disable queue logic
+		config.qsim().setFlowCapFactor(1e9);
+		config.qsim().setStorageCapFactor(1e9);
+		
+		// VDF: Optional
+		VDFConfigGroup.getOrCreate(config).setWriteInterval(1);
+		VDFConfigGroup.getOrCreate(config).setWriteFlowInterval(1);
+
 		Scenario scenario = ScenarioUtils.createScenario(config);
-		IDFConfigurator.configureScenario(scenario);
+		configurator.configureScenario(scenario);
 		ScenarioUtils.loadScenario(scenario);
 
 		Controler controller = new Controler(scenario);
-		IDFConfigurator.configureController(controller);
-		controller.addOverridingModule(new EqasimAnalysisModule());
-		controller.addOverridingModule(new EqasimModeChoiceModule());
-		controller.addOverridingModule(new IDFModeChoiceModule(cmd));
-
-		controller.addOverridingModule(new VDFModule());
+		configurator.configureController(controller);
 
 		controller.run();
 	}

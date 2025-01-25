@@ -6,6 +6,43 @@ included in the (note yet determined) next version number.
 
 **Development version**
 
+- Improve Emissions tools in order to handle unknown Osm highway tag values when mapping HBEFA road types
+- add configurable policies for IDF
+- Introduce `travelTimeRecordingInterval` config option that decouples travel time writing from general analysis
+- Add eqasim_activities.csv for analysis
+- The cutters now take a GeoPackage file as an alterative to a ShapeFile
+- Emissions tools have been moved to core package (from ile_de_france)
+- Switched to MATSim 2025 (PR)
+- In switzerland one can now switch off vehicles waiting to enter traffic
+- In swiss module: adjusted the adapt config to allow parametrizing capacity factors and freight in config
+
+**1.5.0**
+
+- Add terminaton criterion
+- Several cleanups in the recent commits
+- Updated to MATSim 15
+- Improve emissions tools and add tests
+- Add support for multi-stage taxi trips in Sao Paulo
+- fix: make compatible with downstream population pipelines
+- Ensure outside activity id doesn't already exist
+- Network-based (car) routing now generates access and egress walk legs
+- Convert initial-routing only-walk legs to actual walk (instead of transit)
+- Don't put activities on motorway/trunk/link in the network
+- Updated to MATSim 14
+- Isolated the mode choice model in a standalone runnable script
+- Fixed LegIndex count between iterations in legs analysis
+- Improved batch routing tools
+- Allow boolean values in parameter definition
+- Added stop area to transit leg analysis output
+- Improve functionality of routing tools to set utilities in detail
+- Fix bug in EqasimTransitQSimModule: first check if EqasimConfigGroup has TransitEngineModule before removing it
+- Updated config option from `eqasim.tripAnalysisInterval` to `eqasim.analysisInterval`
+- Automatically produce analysis output for legs and public transport information
+- Move analysis classes to `org.eqasim.core.analysis.run`
+- Add option for configuring custom activities in the Switzerland config file
+- Add air pollution emissions computation and analysis
+- Add fixed epsilon functionality
+- Transform scenario configurators to proper classes (formerly static methods)
 - Set routing parameter for waiting time in Île-de-France to -1.0
 - Allow cutter to process events to (1) perform routing based on recorded travel time, and (2) find crossing points based on the actual link enter/leave times of a previous simulation
 - Simplify cutting by introducing `--plans-path` option which is interpreted as relative to CWD

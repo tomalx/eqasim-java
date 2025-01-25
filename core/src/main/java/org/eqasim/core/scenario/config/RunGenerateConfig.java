@@ -11,10 +11,12 @@ public class RunGenerateConfig {
 	static public void main(String[] args) throws ConfigurationException {
 		CommandLine cmd = new CommandLine.Builder(args) //
 				.requireOptions("output-path", "prefix", "sample-size", "threads") //
-				.allowOptions("random-seed") //
+				.allowOptions("random-seed", EqasimConfigurator.CONFIGURATOR) //
 				.build();
 
-		Config config = ConfigUtils.createConfig(EqasimConfigurator.getConfigGroups());
+		EqasimConfigurator configurator = EqasimConfigurator.getInstance(cmd);
+		Config config = ConfigUtils.createConfig();
+		configurator.updateConfig(config);
 
 		String prefix = cmd.getOptionStrict("prefix");
 		double sampleSize = Double.parseDouble(cmd.getOptionStrict("sample-size"));

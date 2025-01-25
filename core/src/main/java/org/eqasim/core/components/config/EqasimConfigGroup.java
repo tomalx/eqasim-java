@@ -20,10 +20,14 @@ public class EqasimConfigGroup extends ReflectiveConfigGroup {
 	private final static String MODE_PARAMETERS_PATH = "modeParametersPath";
 	private final static String COST_PARAMETERS_PATH = "costParametersPath";
 
-	private final static String TRIP_ANALYSIS_INTERVAL = "tripAnalysisInterval";
-	private final static String TRIP_ANALYSIS_DISTANCE_UNIT = "tripAnalysisDistanceUnit";
+	private final static String ANALYSIS_INTERVAL = "analysisInterval";
+	private final static String ANALYSIS_DISTANCE_UNIT = "analysisDistanceUnit";
+	
+	private final static String TRAVEL_TIME_RECORDING_INTERVAL = "travelTimeRecordingInterval";
 
 	private final static String USE_SCHEDULE_BASED_TRANSPORT = "useScheduleBasedTransport";
+
+	private final static String USE_PSEUDO_RANDOM_ERRORS = "usePseudoRandomErrors";
 
 	private double sampleSize = 1.0;
 	private DistanceUnit distanceUnit = DistanceUnit.meter;
@@ -33,10 +37,14 @@ public class EqasimConfigGroup extends ReflectiveConfigGroup {
 	private String modeParametersPath = null;
 	private String costParametersPath = null;
 
-	private int tripAnalysisInterval = 0;
-	private DistanceUnit tripAnalysisDistanceUnit = DistanceUnit.meter;
+	private int analysisInterval = 0;
+	private DistanceUnit analysisDistanceUnit = DistanceUnit.meter;
+	
+	private int travelTimeRecordingInterval = 0;
 
 	private boolean useScheduleBasedTransport = true;
+
+	private boolean usePseudoRandomErrors = false;
 
 	public EqasimConfigGroup() {
 		super(GROUP_NAME);
@@ -60,6 +68,16 @@ public class EqasimConfigGroup extends ReflectiveConfigGroup {
 	@StringSetter(SAMPLE_SIZE)
 	public void setSampleSize(double sampleSize) {
 		this.sampleSize = sampleSize;
+	}
+
+	@StringGetter(USE_PSEUDO_RANDOM_ERRORS)
+	public boolean getUsePseudoRandomErrors() {
+		return usePseudoRandomErrors;
+	}
+
+	@StringSetter(USE_PSEUDO_RANDOM_ERRORS)
+	public void setUsePseudoRandomErrors(boolean usePseudoRandomErrors) {
+		this.usePseudoRandomErrors = usePseudoRandomErrors;
 	}
 
 	@Override
@@ -198,14 +216,24 @@ public class EqasimConfigGroup extends ReflectiveConfigGroup {
 		this.costParametersPath = costParametersPath;
 	}
 
-	@StringGetter(TRIP_ANALYSIS_INTERVAL)
-	public int getTripAnalysisInterval() {
-		return tripAnalysisInterval;
+	@StringGetter(ANALYSIS_INTERVAL)
+	public int getAnalysisInterval() {
+		return analysisInterval;
 	}
 
-	@StringSetter(TRIP_ANALYSIS_INTERVAL)
-	public void setTripAnalysisInterval(int tripAnalysisInterval) {
-		this.tripAnalysisInterval = tripAnalysisInterval;
+	@StringSetter(ANALYSIS_INTERVAL)
+	public void setAnalysisInterval(int analysisInterval) {
+		this.analysisInterval = analysisInterval;
+	}
+
+	@StringGetter(TRAVEL_TIME_RECORDING_INTERVAL)
+	public int getTravelTimeRecordingInterval() {
+		return travelTimeRecordingInterval;
+	}
+
+	@StringSetter(TRAVEL_TIME_RECORDING_INTERVAL)
+	public void setTravelTimeRecordingInterval(int travelTimeRecordingInterval) {
+		this.travelTimeRecordingInterval = travelTimeRecordingInterval;
 	}
 
 	@StringGetter(DISTANCE_UNIT)
@@ -218,14 +246,14 @@ public class EqasimConfigGroup extends ReflectiveConfigGroup {
 		this.distanceUnit = distanceUnit;
 	}
 
-	@StringGetter(TRIP_ANALYSIS_DISTANCE_UNIT)
-	public DistanceUnit getTripAnalysisDistanceUnit() {
-		return tripAnalysisDistanceUnit;
+	@StringGetter(ANALYSIS_DISTANCE_UNIT)
+	public DistanceUnit getAnalysisDistanceUnit() {
+		return analysisDistanceUnit;
 	}
 
-	@StringSetter(TRIP_ANALYSIS_DISTANCE_UNIT)
-	public void setTripAnalysisDistanceUnit(DistanceUnit tripAnalysisDistanceUnit) {
-		this.tripAnalysisDistanceUnit = tripAnalysisDistanceUnit;
+	@StringSetter(ANALYSIS_DISTANCE_UNIT)
+	public void setAnalysisDistanceUnit(DistanceUnit analysisDistanceUnit) {
+		this.analysisDistanceUnit = analysisDistanceUnit;
 	}
 
 	@StringGetter(USE_SCHEDULE_BASED_TRANSPORT)

@@ -17,15 +17,25 @@ such as for:
 - [Sao Paulo](https://github.com/eqasim-org/sao_paulo)
 
 To understand how to set up a simulation and run it, please refer to the
-respective repositories. To cut out smaller parts of existing simulations
-check out how to use this repository to [create simulation cut-outs](docs/cutting.md).
+respective repositories. 
+
+Additional topics:
+- How to [cut out smaller parts of existing simulations](docs/cutting.md).
+- How to [run a simulation with on-demand mobility services](docs/on_demand_mobility.md) (as a main mode and as a transit feeder).
+- How to [run the discrete mode choice model as a standalone](docs/standalone_mode_choice.md)
+- How to [use Volume Delay Functions for the network simulation](docs/vdf.md)
+
+## Main reference
+
+The main research reference for the eqasim-java framework:
+> Hörl, S. and M. Balac (2021) [Introducing the eqasim pipeline: From raw data to agent-based transport simulation](https://www.researchgate.net/publication/351676356_Introducing_the_eqasim_pipeline_From_raw_data_to_agent-based_transport_simulation), _Procedia Computer Science_, 184, 712-719.
 
 ## Versioning and Packging
 
 [![Build Status](https://travis-ci.com/eqasim-org/eqasim-java.svg?branch=develop)](https://travis-ci.com/eqasim-org/eqasim-java)
 
-The current version of `eqasim` is `1.3.1` and is based on MATSim `13.0`. You can access it through the `v1.3.1` tag. The
-`develop` branch is kept at version `1.3.1` until the next release is prepared,
+The current version of `eqasim` is `1.5.0` and is based on MATSim `15.0`. You can access it through the `v1.5.0` tag. The
+`develop` branch is kept at version `1.5.0` until the next release is prepared,
 but may include additional developments since the last release.
 
 The code is available as a Maven package. To use it, add the following repository
@@ -44,8 +54,12 @@ Afterwards, you can add various sub-packages to your project:
 <dependency>
     <groupId>org.eqasim</groupId>
     <artifactId>core</artifactId>
-    <version>1.3.1</version>
+    <version>1.5.0</version>
 </dependency>
 ```
 
-Besides test latest releases based on MATSim 13, legacy versions `1.2.1`, `1.2.0`, `1.0.6`, and `1.0.5` are also available through packagecloud.
+Besides the latest release based on MATSim 15.0, legacy versions `1.3.1`, `1.2.1`, `1.2.0`, `1.0.6`, and `1.0.5` are also available through packagecloud.
+
+## Upstream branch
+
+To keep scenario-based repositories up-to-date (for instance, [ile-de-france](https://github.com/eqasim-org/ile-de-france)), we provide the `upstream` branch, which contains a well-defined `develop` version of `eqasim-java` and is used in the `develop` version of the dependent repository. While this is useful for development purposes, their versioned releases will always depend on versioned releases of `eqasim-java`.

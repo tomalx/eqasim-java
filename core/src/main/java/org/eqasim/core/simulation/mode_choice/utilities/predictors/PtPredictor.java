@@ -18,11 +18,15 @@ import static org.matsim.api.core.v01.TransportMode.*;
 import static org.matsim.api.core.v01.TransportMode.bike;
 
 public class PtPredictor extends CachedVariablePredictor<PtVariables> {
-	private CostModel costModel;
+	private final CostModel costModel;
 
 	@Inject
 	public PtPredictor(@Named("pt") CostModel costModel) {
 		this.costModel = costModel;
+	}
+
+	protected CostModel getCostModel() {
+		return this.costModel;
 	}
 
 	@Override
@@ -42,8 +46,7 @@ public class PtPredictor extends CachedVariablePredictor<PtVariables> {
 		double accessEgressTime_min = 0.0;
 
 		for (PlanElement element : elements) {
-			if (element instanceof Leg) {
-				Leg leg = (Leg) element;
+			if (element instanceof Leg leg) {
 
 				switch (leg.getMode()) {
 				case bike:
